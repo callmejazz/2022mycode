@@ -1,16 +1,19 @@
-# This is a sample Python script.
+#!/usr/bin/python3
+"""Alta3 Research | RZFeeser
+   Review of Lists and Dictionaries"""
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# define a short data set (in real world, we want to read this from a file or API)
+munsters = {'endDate': 1966, 'startDate': 1964,\
+        'names':['Lily', 'Herman', 'Grandpa', 'Eddie', 'Marilyn']}   # {} creates dict
 
+# Your solution goes below this line
+# ----------------------------------
+print("The names of the munsters are: ", munsters.get("names"))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print("The end date for munsters is: ", munsters.get("endDate"))
 
+print("The start date for munsters is: ", munsters.get("startDate"))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+munsters["episodes"] = 99
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("episodes", munsters.get("episodes"))
